@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MHRUHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Questions" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uFg-mA-WQc">
+                                <rect key="frame" x="37.5" y="213" width="300" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="02a-6D-klW">
+                                <rect key="frame" x="37.5" y="333.5" width="300" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eha-VO-Pbx" customClass="ButtonBorder" customModule="MHRUHospital" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="147" height="30"/>
+                                        <color key="backgroundColor" red="0.80210036039352417" green="0.99677020311355591" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Yes"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="call:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9QP-Pb-8Z8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUr-t4-jeY" customClass="ButtonBorder" customModule="MHRUHospital" customModuleProvider="target">
+                                        <rect key="frame" x="153" y="0.0" width="147" height="30"/>
+                                        <color key="backgroundColor" red="0.80210036039352417" green="0.99677020311355591" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <state key="normal" title="No"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y3f-KB-Tud"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uFg-mA-WQc" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="A9M-N3-NwE"/>
+                            <constraint firstItem="02a-6D-klW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="L61-xi-sbv"/>
+                            <constraint firstItem="02a-6D-klW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NEI-6P-bKe"/>
+                            <constraint firstItem="uFg-mA-WQc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dQX-5x-2gr"/>
+                            <constraint firstItem="02a-6D-klW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="p6k-xH-ndB"/>
+                            <constraint firstItem="uFg-mA-WQc" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="sk3-Y8-qaf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="No" destination="vUr-t4-jeY" id="Taj-rs-hsT"/>
+                        <outlet property="Question" destination="uFg-mA-WQc" id="3dE-7e-OFP"/>
+                        <outlet property="Yes" destination="eha-VO-Pbx" id="Coi-PK-XUY"/>
+                        <segue destination="ZpF-tr-PIQ" kind="presentation" identifier="disclamer" modalTransitionStyle="flipHorizontal" id="D7N-hM-cjz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="30.134932533733135"/>
+        </scene>
+        <!--DisclamerVC-->
+        <scene sceneID="E2Y-Z9-Rzo">
+            <objects>
+                <viewController id="ZpF-tr-PIQ" customClass="DisclamerVC" customModule="MHRUHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sbI-ap-jvm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEt-d4-NCF">
+                                <rect key="frame" x="37.5" y="133.5" width="300" height="400"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWA-LT-Zog" customClass="ButtonBorder" customModule="MHRUHospital" customModuleProvider="target">
+                                <rect key="frame" x="37" y="629" width="300" height="30"/>
+                                <color key="backgroundColor" red="0.79398202900000003" green="0.9966555238" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="I AGREE"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="IAgree:" destination="ZpF-tr-PIQ" eventType="touchUpInside" id="HHn-dl-NBF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cEt-d4-NCF" firstAttribute="width" secondItem="sbI-ap-jvm" secondAttribute="width" multiplier="0.8" id="F6i-an-f5D"/>
+                            <constraint firstItem="CWA-LT-Zog" firstAttribute="width" secondItem="sbI-ap-jvm" secondAttribute="width" multiplier="0.8" id="JsX-7H-Mzj"/>
+                            <constraint firstItem="CWA-LT-Zog" firstAttribute="bottom" secondItem="j0N-6D-SIU" secondAttribute="bottom" constant="-8" id="Lq0-du-71X"/>
+                            <constraint firstItem="cEt-d4-NCF" firstAttribute="centerX" secondItem="sbI-ap-jvm" secondAttribute="centerX" id="WdE-NE-Drc"/>
+                            <constraint firstItem="cEt-d4-NCF" firstAttribute="height" secondItem="sbI-ap-jvm" secondAttribute="height" multiplier="0.6" id="Ya5-PY-WhC"/>
+                            <constraint firstItem="cEt-d4-NCF" firstAttribute="centerY" secondItem="sbI-ap-jvm" secondAttribute="centerY" id="Zct-Ix-pkQ"/>
+                            <constraint firstItem="CWA-LT-Zog" firstAttribute="centerX" secondItem="sbI-ap-jvm" secondAttribute="centerX" id="dFU-3h-Idz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="j0N-6D-SIU"/>
+                    </view>
+                    <connections>
+                        <outlet property="Disclamer" destination="cEt-d4-NCF" id="eTD-gI-5ZW"/>
+                        <outlet property="btn" destination="CWA-LT-Zog" id="n4t-OG-yzC"/>
+                        <segue destination="ZdL-Ya-uUi" kind="presentation" identifier="profile" modalTransitionStyle="flipHorizontal" id="Nri-yn-bcd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="biZ-zS-2J9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="30"/>
+        </scene>
+        <!--ProfileVC-->
+        <scene sceneID="cFM-7P-SgB">
+            <objects>
+                <viewController id="ZdL-Ya-uUi" customClass="ProfileVC" customModule="MHRUHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L8f-JP-76u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yxM-rs-zNV">
+                                <rect key="frame" x="37.5" y="200.5" width="300" height="266.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O2N-LJ-ZXM" customClass="UnderlinedTextField" customModule="MHRUHospital" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="37.5"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.82596759669999997" green="0.79253660579999996" blue="0.84926193949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="user"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date of Birth" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xlo-vm-e65" customClass="UnderlinedTextField" customModule="MHRUHospital" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="57.5" width="300" height="37"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.82596759669999997" green="0.79253660579999996" blue="0.84926193949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="date"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a3W-NW-Xmr" customClass="UnderlinedTextField" customModule="MHRUHospital" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="114.5" width="300" height="37.5"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.82596759669999997" green="0.79253660579999996" blue="0.84926193949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="address"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yhK-Og-rec" customClass="UnderlinedTextField" customModule="MHRUHospital" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="172" width="300" height="37"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.82596759669999997" green="0.79253660579999996" blue="0.84926193949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="email"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gjp-KI-N3i" customClass="UnderlinedTextField" customModule="MHRUHospital" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="229" width="300" height="37.5"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.82596759669999997" green="0.79253660579999996" blue="0.84926193949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="lock"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFb-pN-RhL" customClass="ButtonBorder" customModule="MHRUHospital" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="617" width="300" height="30"/>
+                                <color key="backgroundColor" red="0.79398202900000003" green="0.9966555238" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SUBMIT"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="submit:" destination="ZdL-Ya-uUi" eventType="touchUpInside" id="CwN-ij-gOS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aFb-pN-RhL" firstAttribute="centerX" secondItem="L8f-JP-76u" secondAttribute="centerX" id="1HC-yd-mgW"/>
+                            <constraint firstItem="B8A-nJ-SRd" firstAttribute="bottom" secondItem="aFb-pN-RhL" secondAttribute="bottom" constant="20" id="C7V-S7-7Lf"/>
+                            <constraint firstItem="yxM-rs-zNV" firstAttribute="centerY" secondItem="L8f-JP-76u" secondAttribute="centerY" id="K2w-UW-m38"/>
+                            <constraint firstItem="yxM-rs-zNV" firstAttribute="height" secondItem="L8f-JP-76u" secondAttribute="height" multiplier="0.4" id="MSj-CC-l6F"/>
+                            <constraint firstItem="yxM-rs-zNV" firstAttribute="width" secondItem="L8f-JP-76u" secondAttribute="width" multiplier="0.8" id="Ree-1z-ILk"/>
+                            <constraint firstItem="yxM-rs-zNV" firstAttribute="centerX" secondItem="L8f-JP-76u" secondAttribute="centerX" id="azl-jl-cXQ"/>
+                            <constraint firstItem="aFb-pN-RhL" firstAttribute="width" secondItem="L8f-JP-76u" secondAttribute="width" multiplier="0.8" id="p4V-gt-3pf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B8A-nJ-SRd"/>
+                    </view>
+                    <connections>
+                        <outlet property="submit" destination="aFb-pN-RhL" id="fU9-ay-Ce4"/>
+                        <segue destination="TG8-Xu-58d" kind="presentation" identifier="legalDoc" id="FzF-sQ-MJD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kLl-q7-GgU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1356" y="29"/>
+        </scene>
+        <!--Legal DocVC-->
+        <scene sceneID="94T-IO-jbn">
+            <objects>
+                <viewController id="TG8-Xu-58d" customClass="LegalDocVC" customModule="MHRUHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z3d-h5-ZHZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Document" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYL-kI-oUi">
+                                <rect key="frame" x="18.5" y="100" width="337.5" height="467"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZA8-yB-YD2" customClass="ButtonBorder" customModule="MHRUHospital" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="617" width="300" height="30"/>
+                                <color key="backgroundColor" red="0.79398202900000003" green="0.9966555238" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="NEXT"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="NextBtnAction:" destination="TG8-Xu-58d" eventType="touchUpInside" id="Z9d-Of-0fo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QYL-kI-oUi" firstAttribute="width" secondItem="Z3d-h5-ZHZ" secondAttribute="width" multiplier="0.9" id="0er-XH-Q3y"/>
+                            <constraint firstItem="ZA8-yB-YD2" firstAttribute="centerX" secondItem="Z3d-h5-ZHZ" secondAttribute="centerX" id="VDH-Dm-Voe"/>
+                            <constraint firstItem="bP0-du-yyL" firstAttribute="bottom" secondItem="ZA8-yB-YD2" secondAttribute="bottom" constant="20" id="f1m-BJ-34p"/>
+                            <constraint firstItem="QYL-kI-oUi" firstAttribute="height" secondItem="Z3d-h5-ZHZ" secondAttribute="height" multiplier="0.7" id="iNu-iV-YMN"/>
+                            <constraint firstItem="ZA8-yB-YD2" firstAttribute="width" secondItem="Z3d-h5-ZHZ" secondAttribute="width" multiplier="0.8" id="p9U-Sm-EZr"/>
+                            <constraint firstItem="QYL-kI-oUi" firstAttribute="centerX" secondItem="Z3d-h5-ZHZ" secondAttribute="centerX" id="srE-GR-9EI"/>
+                            <constraint firstItem="QYL-kI-oUi" firstAttribute="centerY" secondItem="Z3d-h5-ZHZ" secondAttribute="centerY" id="wBM-Xf-X9S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bP0-du-yyL"/>
+                    </view>
+                    <connections>
+                        <outlet property="DocLbl" destination="QYL-kI-oUi" id="UFj-xx-dhq"/>
+                        <outlet property="NextBtn" destination="ZA8-yB-YD2" id="VnP-WC-8fw"/>
+                        <segue destination="lV6-vA-udo" kind="presentation" identifier="InsuranceInformation" id="rFI-e6-aaq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUt-cP-hR9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2130" y="28"/>
+        </scene>
+        <!--Insurance InformationVC-->
+        <scene sceneID="txo-Hc-g7Q">
+            <objects>
+                <viewController id="lV6-vA-udo" customClass="InsuranceInformationVC" customModule="MHRUHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2KY-Li-r73">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="M1M-ga-iVd">
+                                <rect key="frame" x="37.5" y="167" width="300" height="333.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gk7-nD-mHD" customClass="UnderlinedTextField" customModule="MHRUHospital" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="46.5"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.82596759669999997" green="0.79253660579999996" blue="0.84926193949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="user"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d97-pS-gOa" customClass="UnderlinedTextField" customModule="MHRUHospital" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="71.5" width="300" height="47"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.82596759669999997" green="0.79253660579999996" blue="0.84926193949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="address"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insurance Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m5K-bl-F8t" customClass="UnderlinedTextField" customModule="MHRUHospital" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="143.5" width="300" height="46.5"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.82596759669999997" green="0.79253660579999996" blue="0.84926193949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="ic_looks"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insurance ID / Policy No." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SIq-jz-tBr" customClass="UnderlinedTextField" customModule="MHRUHospital" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="215" width="300" height="47"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.82596759669999997" green="0.79253660579999996" blue="0.84926193949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="ic_insert_drive_file"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telephone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PZZ-Lm-DS6" customClass="UnderlinedTextField" customModule="MHRUHospital" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="287" width="300" height="46.5"/>
+                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="width">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.82596759669999997" green="0.79253660579999996" blue="0.84926193949999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="ic_phone"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxI-H8-3FP" customClass="ButtonBorder" customModule="MHRUHospital" customModuleProvider="target">
+                                <rect key="frame" x="37" y="617" width="300" height="30"/>
+                                <color key="backgroundColor" red="0.79398202900000003" green="0.9966555238" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SUBMIT"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Submit:" destination="lV6-vA-udo" eventType="touchUpInside" id="SG6-3E-6zE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WxI-H8-3FP" firstAttribute="width" secondItem="2KY-Li-r73" secondAttribute="width" multiplier="0.8" id="Iig-FI-fWD"/>
+                            <constraint firstItem="WxI-H8-3FP" firstAttribute="centerX" secondItem="2KY-Li-r73" secondAttribute="centerX" id="PN0-2T-89G"/>
+                            <constraint firstItem="M1M-ga-iVd" firstAttribute="centerY" secondItem="2KY-Li-r73" secondAttribute="centerY" id="S0j-Fc-o9V"/>
+                            <constraint firstItem="M1M-ga-iVd" firstAttribute="height" secondItem="2KY-Li-r73" secondAttribute="height" multiplier="0.5" id="T0X-iw-plS"/>
+                            <constraint firstItem="M1M-ga-iVd" firstAttribute="width" secondItem="2KY-Li-r73" secondAttribute="width" multiplier="0.8" id="Tiz-DI-IjM"/>
+                            <constraint firstItem="FS9-TJ-Bag" firstAttribute="bottom" secondItem="WxI-H8-3FP" secondAttribute="bottom" constant="20" id="btA-6l-UbC"/>
+                            <constraint firstItem="M1M-ga-iVd" firstAttribute="centerX" secondItem="2KY-Li-r73" secondAttribute="centerX" id="h0L-iA-3gw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FS9-TJ-Bag"/>
+                    </view>
+                    <connections>
+                        <segue destination="Ojj-Ar-cib" kind="presentation" identifier="Symptoms" id="FiZ-5h-7Px"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2vH-Qk-eWX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2897" y="27"/>
+        </scene>
+        <!--SymptomsVC-->
+        <scene sceneID="jrE-2m-cuE">
+            <objects>
+                <viewController id="Ojj-Ar-cib" customClass="SymptomsVC" customModule="MHRUHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="62G-xT-8LB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="ECt-Kq-fPf">
+                                <rect key="frame" x="0.0" y="20" width="375" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SYMPTOMS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tT3-lk-axE">
+                                <rect key="frame" x="-0.5" y="228" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9bT-K2-nKz">
+                                <rect key="frame" x="19" y="257" width="337.5" height="267"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GOH-wa-BPU" customClass="ButtonBorder" customModule="MHRUHospital" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="617" width="300" height="30"/>
+                                <color key="backgroundColor" red="0.79398202900000003" green="0.9966555238" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SUBMIT"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Submit:" destination="Ojj-Ar-cib" eventType="touchUpInside" id="qSj-zT-0je"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GOH-wa-BPU" firstAttribute="width" secondItem="62G-xT-8LB" secondAttribute="width" multiplier="0.8" id="1Wc-UE-Ycp"/>
+                            <constraint firstItem="tT3-lk-axE" firstAttribute="width" secondItem="62G-xT-8LB" secondAttribute="width" id="9g5-sQ-hq5"/>
+                            <constraint firstItem="tT3-lk-axE" firstAttribute="top" secondItem="ECt-Kq-fPf" secondAttribute="bottom" constant="8" id="DSL-88-JzQ"/>
+                            <constraint firstItem="ECt-Kq-fPf" firstAttribute="leading" secondItem="Q1H-0g-ixC" secondAttribute="leading" id="DZw-72-FMk"/>
+                            <constraint firstItem="ECt-Kq-fPf" firstAttribute="top" secondItem="Q1H-0g-ixC" secondAttribute="top" id="SZb-sK-80q"/>
+                            <constraint firstItem="GOH-wa-BPU" firstAttribute="centerX" secondItem="62G-xT-8LB" secondAttribute="centerX" id="TN5-xA-mTE"/>
+                            <constraint firstItem="9bT-K2-nKz" firstAttribute="centerX" secondItem="62G-xT-8LB" secondAttribute="centerX" id="VkY-Gy-s03"/>
+                            <constraint firstItem="ECt-Kq-fPf" firstAttribute="width" secondItem="62G-xT-8LB" secondAttribute="width" id="a2P-re-GC3"/>
+                            <constraint firstItem="Q1H-0g-ixC" firstAttribute="bottom" secondItem="GOH-wa-BPU" secondAttribute="bottom" constant="20" id="dpD-qp-4EQ"/>
+                            <constraint firstItem="9bT-K2-nKz" firstAttribute="height" secondItem="62G-xT-8LB" secondAttribute="height" multiplier="0.4" id="iQR-1x-9Sr"/>
+                            <constraint firstItem="ECt-Kq-fPf" firstAttribute="centerX" secondItem="62G-xT-8LB" secondAttribute="centerX" id="kEs-E4-c1G"/>
+                            <constraint firstItem="ECt-Kq-fPf" firstAttribute="height" secondItem="62G-xT-8LB" secondAttribute="height" multiplier="0.3" id="r0w-jz-cyd"/>
+                            <constraint firstItem="9bT-K2-nKz" firstAttribute="top" secondItem="tT3-lk-axE" secondAttribute="bottom" constant="8" id="rnv-IE-aoY"/>
+                            <constraint firstItem="tT3-lk-axE" firstAttribute="centerX" secondItem="62G-xT-8LB" secondAttribute="centerX" id="t6D-s0-rj0"/>
+                            <constraint firstItem="9bT-K2-nKz" firstAttribute="width" secondItem="62G-xT-8LB" secondAttribute="width" multiplier="0.9" id="yYk-tg-DjS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Q1H-0g-ixC"/>
+                    </view>
+                    <connections>
+                        <outlet property="SymptomsLbl" destination="9bT-K2-nKz" id="Oxc-8I-5cU"/>
+                        <outlet property="SymptomsText" destination="tT3-lk-axE" id="mvX-uh-BaE"/>
+                        <segue destination="w5M-vq-Y3N" kind="presentation" identifier="MapScreen" id="tk5-V3-hWd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TkM-dk-J8K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3556" y="27.436281859070466"/>
+        </scene>
+        <!--MapVC-->
+        <scene sceneID="xFx-f2-NfS">
+            <objects>
+                <viewController id="w5M-vq-Y3N" customClass="mapVC" customModule="MHRUHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J3g-nA-FEY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCO-dE-MmB" customClass="ButtonBorder" customModule="MHRUHospital" customModuleProvider="target">
+                                <rect key="frame" x="74.5" y="617" width="225" height="30"/>
+                                <color key="backgroundColor" red="0.52808535099999998" green="0.81226724390000005" blue="0.94175952669999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="SUBMIT"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vCO-dE-MmB" firstAttribute="centerX" secondItem="J3g-nA-FEY" secondAttribute="centerX" id="5M1-bb-o36"/>
+                            <constraint firstItem="2q6-Ju-CHX" firstAttribute="bottom" secondItem="vCO-dE-MmB" secondAttribute="bottom" constant="20" id="gyX-8o-Pg2"/>
+                            <constraint firstItem="vCO-dE-MmB" firstAttribute="width" secondItem="J3g-nA-FEY" secondAttribute="width" multiplier="0.6" id="xkR-vP-5Wr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2q6-Ju-CHX"/>
+                    </view>
+                    <connections>
+                        <segue destination="XVY-eY-slk" kind="show" identifier="counter" id="0XV-Lk-79A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yEX-Ii-97r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4378.3999999999996" y="30.134932533733135"/>
+        </scene>
+        <!--CounterVC-->
+        <scene sceneID="aVe-IK-i2s">
+            <objects>
+                <viewController id="XVY-eY-slk" customClass="CounterVC" customModule="MHRUHospital" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gkB-p1-rkL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="i5e-fz-Nli">
+                                <rect key="frame" x="37" y="90" width="300" height="133.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="29s-KX-M9I">
+                                <rect key="frame" x="37" y="273.5" width="300" height="133.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="29s-KX-M9I" firstAttribute="height" secondItem="i5e-fz-Nli" secondAttribute="height" id="0Fm-fL-vYc"/>
+                            <constraint firstItem="29s-KX-M9I" firstAttribute="width" secondItem="i5e-fz-Nli" secondAttribute="width" id="4RM-Mo-J8G"/>
+                            <constraint firstItem="29s-KX-M9I" firstAttribute="top" secondItem="i5e-fz-Nli" secondAttribute="bottom" constant="50" id="Amo-us-Riq"/>
+                            <constraint firstItem="i5e-fz-Nli" firstAttribute="height" secondItem="gkB-p1-rkL" secondAttribute="height" multiplier="0.2" id="E57-76-o9R"/>
+                            <constraint firstItem="i5e-fz-Nli" firstAttribute="top" secondItem="YPL-Ir-4Y3" secondAttribute="top" constant="70" id="GI1-E4-ZJ3"/>
+                            <constraint firstItem="i5e-fz-Nli" firstAttribute="width" secondItem="gkB-p1-rkL" secondAttribute="width" multiplier="0.8" id="PWS-Yr-huf"/>
+                            <constraint firstItem="29s-KX-M9I" firstAttribute="centerX" secondItem="i5e-fz-Nli" secondAttribute="centerX" id="bv4-vD-Os1"/>
+                            <constraint firstItem="i5e-fz-Nli" firstAttribute="centerX" secondItem="gkB-p1-rkL" secondAttribute="centerX" id="vNI-MH-r2Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YPL-Ir-4Y3"/>
+                    </view>
+                    <connections>
+                        <outlet property="TextLbl" destination="i5e-fz-Nli" id="olb-sA-vUg"/>
+                        <outlet property="counterLbl" destination="29s-KX-M9I" id="vnS-b1-WVu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCt-33-wO2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5093.6000000000004" y="29.23538230884558"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2" width="874" height="493"/>
+        <image name="address" width="24" height="24"/>
+        <image name="date" width="24" height="24"/>
+        <image name="email" width="24" height="24"/>
+        <image name="ic_insert_drive_file" width="24" height="24"/>
+        <image name="ic_looks" width="24" height="24"/>
+        <image name="ic_phone" width="24" height="24"/>
+        <image name="lock" width="24" height="24"/>
+        <image name="user" width="24" height="24"/>
+    </resources>
+</document>

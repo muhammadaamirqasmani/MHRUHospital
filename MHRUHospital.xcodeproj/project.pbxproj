@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		371569F34FF53E313D47A950 /* Pods_MHRUHospital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D4B4A12B7D313391F3A4FB /* Pods_MHRUHospital.framework */; };
+		E31E00AE205B9E1800EF4169 /* SymptomsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31E00AD205B9E1800EF4169 /* SymptomsVC.swift */; };
+		E38FD9FC20530A4A006EC2A7 /* DisclamerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38FD9FB20530A4A006EC2A7 /* DisclamerVC.swift */; };
+		E38FD9FE20531545006EC2A7 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38FD9FD20531545006EC2A7 /* ProfileVC.swift */; };
+		E3ABF5452072749300C176C6 /* CounterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3ABF5442072749300C176C6 /* CounterVC.swift */; };
+		E3C87A5620544B880020F536 /* LegalDocVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C87A5520544B880020F536 /* LegalDocVC.swift */; };
+		E3C87A5820544DDA0020F536 /* InsuranceInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C87A5720544DDA0020F536 /* InsuranceInformationVC.swift */; };
+		E3E8A239206002D000177EF0 /* mapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E8A238206002D000177EF0 /* mapVC.swift */; };
+		E3EAD455206AB01700B9D600 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3EAD454206AB01700B9D600 /* GoogleService-Info.plist */; };
+		E3EC7C712052DAE000B7F7D2 /* InsertTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EC7C6D2052DAE000B7F7D2 /* InsertTextField.swift */; };
+		E3EC7C722052DAE000B7F7D2 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EC7C6E2052DAE000B7F7D2 /* UIButton.swift */; };
+		E3EC7C732052DAE000B7F7D2 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EC7C6F2052DAE000B7F7D2 /* UnderlinedTextField.swift */; };
+		E3EC7C742052DAE000B7F7D2 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EC7C702052DAE000B7F7D2 /* ShadowView.swift */; };
+		E3EE6BFF2051B81D003AA98F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE6BFE2051B81D003AA98F /* AppDelegate.swift */; };
+		E3EE6C012051B81D003AA98F /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EE6C002051B81D003AA98F /* FirstVC.swift */; };
+		E3EE6C042051B81D003AA98F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3EE6C022051B81D003AA98F /* Main.storyboard */; };
+		E3EE6C062051B81D003AA98F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3EE6C052051B81D003AA98F /* Assets.xcassets */; };
+		E3EE6C092051B81D003AA98F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3EE6C072051B81D003AA98F /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		187DE1A24D1190A2B35C5E06 /* Pods-MHRUHospital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHRUHospital.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHRUHospital/Pods-MHRUHospital.release.xcconfig"; sourceTree = "<group>"; };
+		21D4B4A12B7D313391F3A4FB /* Pods_MHRUHospital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHRUHospital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93275FA9A81A597EA2AE6218 /* Pods-MHRUHospital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHRUHospital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHRUHospital/Pods-MHRUHospital.debug.xcconfig"; sourceTree = "<group>"; };
+		E31E00AD205B9E1800EF4169 /* SymptomsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsVC.swift; sourceTree = "<group>"; };
+		E38FD9FB20530A4A006EC2A7 /* DisclamerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclamerVC.swift; sourceTree = "<group>"; };
+		E38FD9FD20531545006EC2A7 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		E3ABF5442072749300C176C6 /* CounterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterVC.swift; sourceTree = "<group>"; };
+		E3C87A5520544B880020F536 /* LegalDocVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalDocVC.swift; sourceTree = "<group>"; };
+		E3C87A5720544DDA0020F536 /* InsuranceInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceInformationVC.swift; sourceTree = "<group>"; };
+		E3E8A238206002D000177EF0 /* mapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapVC.swift; sourceTree = "<group>"; };
+		E3EAD454206AB01700B9D600 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E3EC7C6D2052DAE000B7F7D2 /* InsertTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertTextField.swift; sourceTree = "<group>"; };
+		E3EC7C6E2052DAE000B7F7D2 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		E3EC7C6F2052DAE000B7F7D2 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
+		E3EC7C702052DAE000B7F7D2 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		E3EE6BFB2051B81D003AA98F /* MHRUHospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHRUHospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3EE6BFE2051B81D003AA98F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3EE6C002051B81D003AA98F /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		E3EE6C032051B81D003AA98F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3EE6C052051B81D003AA98F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3EE6C082051B81D003AA98F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3EE6C0A2051B81D003AA98F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3EE6BF82051B81D003AA98F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371569F34FF53E313D47A950 /* Pods_MHRUHospital.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85E66738A48536DC7ACF56D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21D4B4A12B7D313391F3A4FB /* Pods_MHRUHospital.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3C87A5420544ADE0020F536 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E3EE6C002051B81D003AA98F /* FirstVC.swift */,
+				E38FD9FB20530A4A006EC2A7 /* DisclamerVC.swift */,
+				E38FD9FD20531545006EC2A7 /* ProfileVC.swift */,
+				E3C87A5520544B880020F536 /* LegalDocVC.swift */,
+				E3C87A5720544DDA0020F536 /* InsuranceInformationVC.swift */,
+				E31E00AD205B9E1800EF4169 /* SymptomsVC.swift */,
+				E3E8A238206002D000177EF0 /* mapVC.swift */,
+				E3ABF5442072749300C176C6 /* CounterVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E3EC7C752052DAE600B7F7D2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E3EC7C6D2052DAE000B7F7D2 /* InsertTextField.swift */,
+				E3EC7C702052DAE000B7F7D2 /* ShadowView.swift */,
+				E3EC7C6E2052DAE000B7F7D2 /* UIButton.swift */,
+				E3EC7C6F2052DAE000B7F7D2 /* UnderlinedTextField.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E3EE6BF22051B81D003AA98F = {
+			isa = PBXGroup;
+			children = (
+				E3EE6BFD2051B81D003AA98F /* MHRUHospital */,
+				E3EE6BFC2051B81D003AA98F /* Products */,
+				E580464E62E10C96EAB1319A /* Pods */,
+				85E66738A48536DC7ACF56D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E3EE6BFC2051B81D003AA98F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3EE6BFB2051B81D003AA98F /* MHRUHospital.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3EE6BFD2051B81D003AA98F /* MHRUHospital */ = {
+			isa = PBXGroup;
+			children = (
+				E3EAD454206AB01700B9D600 /* GoogleService-Info.plist */,
+				E3C87A5420544ADE0020F536 /* Controller */,
+				E3EC7C752052DAE600B7F7D2 /* Extension */,
+				E3EE6BFE2051B81D003AA98F /* AppDelegate.swift */,
+				E3EE6C022051B81D003AA98F /* Main.storyboard */,
+				E3EE6C052051B81D003AA98F /* Assets.xcassets */,
+				E3EE6C072051B81D003AA98F /* LaunchScreen.storyboard */,
+				E3EE6C0A2051B81D003AA98F /* Info.plist */,
+			);
+			path = MHRUHospital;
+			sourceTree = "<group>";
+		};
+		E580464E62E10C96EAB1319A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93275FA9A81A597EA2AE6218 /* Pods-MHRUHospital.debug.xcconfig */,
+				187DE1A24D1190A2B35C5E06 /* Pods-MHRUHospital.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3EE6BFA2051B81D003AA98F /* MHRUHospital */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3EE6C0D2051B81D003AA98F /* Build configuration list for PBXNativeTarget "MHRUHospital" */;
+			buildPhases = (
+				DD720B8585D68DEA65C6FBA3 /* [CP] Check Pods Manifest.lock */,
+				E3EE6BF72051B81D003AA98F /* Sources */,
+				E3EE6BF82051B81D003AA98F /* Frameworks */,
+				E3EE6BF92051B81D003AA98F /* Resources */,
+				DAA866A11C694CE2267BABA8 /* [CP] Embed Pods Frameworks */,
+				6C3CA237928E454C6FB7948C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MHRUHospital;
+			productName = MHRUHospital;
+			productReference = E3EE6BFB2051B81D003AA98F /* MHRUHospital.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3EE6BF32051B81D003AA98F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = maq;
+				TargetAttributes = {
+					E3EE6BFA2051B81D003AA98F = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E3EE6BF62051B81D003AA98F /* Build configuration list for PBXProject "MHRUHospital" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3EE6BF22051B81D003AA98F;
+			productRefGroup = E3EE6BFC2051B81D003AA98F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3EE6BFA2051B81D003AA98F /* MHRUHospital */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3EE6BF92051B81D003AA98F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3EE6C092051B81D003AA98F /* LaunchScreen.storyboard in Resources */,
+				E3EAD455206AB01700B9D600 /* GoogleService-Info.plist in Resources */,
+				E3EE6C062051B81D003AA98F /* Assets.xcassets in Resources */,
+				E3EE6C042051B81D003AA98F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C3CA237928E454C6FB7948C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MHRUHospital/Pods-MHRUHospital-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MHRUHospital/Pods-MHRUHospital-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAA866A11C694CE2267BABA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MHRUHospital/Pods-MHRUHospital-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MHRUHospital/Pods-MHRUHospital-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD720B8585D68DEA65C6FBA3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MHRUHospital-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3EE6BF72051B81D003AA98F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3EC7C742052DAE000B7F7D2 /* ShadowView.swift in Sources */,
+				E3EC7C732052DAE000B7F7D2 /* UnderlinedTextField.swift in Sources */,
+				E3ABF5452072749300C176C6 /* CounterVC.swift in Sources */,
+				E3EE6C012051B81D003AA98F /* FirstVC.swift in Sources */,
+				E3C87A5620544B880020F536 /* LegalDocVC.swift in Sources */,
+				E3C87A5820544DDA0020F536 /* InsuranceInformationVC.swift in Sources */,
+				E3E8A239206002D000177EF0 /* mapVC.swift in Sources */,
+				E38FD9FC20530A4A006EC2A7 /* DisclamerVC.swift in Sources */,
+				E38FD9FE20531545006EC2A7 /* ProfileVC.swift in Sources */,
+				E3EC7C712052DAE000B7F7D2 /* InsertTextField.swift in Sources */,
+				E3EE6BFF2051B81D003AA98F /* AppDelegate.swift in Sources */,
+				E31E00AE205B9E1800EF4169 /* SymptomsVC.swift in Sources */,
+				E3EC7C722052DAE000B7F7D2 /* UIButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E3EE6C022051B81D003AA98F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3EE6C032051B81D003AA98F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3EE6C072051B81D003AA98F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3EE6C082051B81D003AA98F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3EE6C0B2051B81D003AA98F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E3EE6C0C2051B81D003AA98F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3EE6C0E2051B81D003AA98F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93275FA9A81A597EA2AE6218 /* Pods-MHRUHospital.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SUBZ24DP5B;
+				INFOPLIST_FILE = MHRUHospital/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maq.MHRUHospital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3EE6C0F2051B81D003AA98F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 187DE1A24D1190A2B35C5E06 /* Pods-MHRUHospital.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SUBZ24DP5B;
+				INFOPLIST_FILE = MHRUHospital/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maq.MHRUHospital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3EE6BF62051B81D003AA98F /* Build configuration list for PBXProject "MHRUHospital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3EE6C0B2051B81D003AA98F /* Debug */,
+				E3EE6C0C2051B81D003AA98F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3EE6C0D2051B81D003AA98F /* Build configuration list for PBXNativeTarget "MHRUHospital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3EE6C0E2051B81D003AA98F /* Debug */,
+				E3EE6C0F2051B81D003AA98F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3EE6BF32051B81D003AA98F /* Project object */;
+}
